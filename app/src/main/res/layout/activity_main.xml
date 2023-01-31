@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCCCCCC"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/scoretxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="score: 0"
+        android:textSize="30dp"
+        android:gravity="center"></TextView>
+
+    <LinearLayout
+        android:id="@+id/enemyview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:background="#86FCC5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/starttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작은 화면을 터치하세요"
+            android:textSize="30dp"
+            android:layout_gravity="center"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/heroview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="#86CDFC">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="#CDE2F1"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/leftbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LMOVE"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"></Button>
+        <Button
+            android:id="@+id/rightbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RMOVE"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+            android:visibility="invisible"></Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
